@@ -1,0 +1,36 @@
+#! /bin/bash
+# version of wallset 
+version=0.0.4
+
+# Installation Path in $PLACE - use full path!
+# Default is /home/$USER/.config/wallset
+PLACE=/home/$USER/.config/wallset
+
+# Configure Monitors. up to 6 are supported
+# please specify dimensions by Xorg via xrandr
+# Options: use "wallset.sh -m" to get specifications or set 'FALSE' (in Allcaps!)
+# Example: MONITOR1=1920x1080
+MONITOR1=FALSE
+MONITOR2=FALSE
+MONITOR3=FALSE
+MONITOR4=FALSE
+MONITOR5=FALSE
+MONITOR6=FALSE
+
+# Wallset keeps a Log of all used files
+# specify how many lines you want to keep? (1 Monitor keeps 1 line for each Wallpaper)
+# recomendation is at least 1 Line for each Monitor.
+LOGLENGTH=20
+
+
+##### slideshow specific settings with register files
+# Sort Files in Register 
+# Options are : "NORMAL" , "REVERSE" and "RANDOM"
+SORT=RANDOM
+
+# Intervall for changing in seconds
+INTERVAL=60
+# Force the Intervall to be 'value INTERVAL' (see above) even if played videoduration is longer than that
+FORCEDINTERVAL=FALSE
+
+# Here are the Regfiles - please dont edit manually. to create/delete use wallset.sh -r [new/delete] option
